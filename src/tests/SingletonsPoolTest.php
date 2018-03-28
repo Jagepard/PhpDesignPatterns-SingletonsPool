@@ -13,7 +13,7 @@ use AntiPatterns\SingletonsPool\SingletonsPool;
 
 
 /**
- * Class FactoryMethodTest
+ * Class SingletonsPoolTest
  */
 class SingletonsPoolTest extends PHPUnit_Framework_TestCase
 {
