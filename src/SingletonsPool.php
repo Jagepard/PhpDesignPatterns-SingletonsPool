@@ -12,7 +12,7 @@ namespace AntiPatterns\SingletonsPool;
 
 
 /**
- * Class Multiton
+ * Class SingletonsPool
  * @package AntiPatterns\SingletonsPool
  */
 final class SingletonsPool
