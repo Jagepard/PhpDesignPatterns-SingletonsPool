@@ -1,7 +1,7 @@
 #! usr/bin/env php
 <?php
 
-namespace AntiPatterns\Multiton;
+namespace AntiPatterns\SingletonsPool;
 
 require_once 'vendor/autoload.php';
 
