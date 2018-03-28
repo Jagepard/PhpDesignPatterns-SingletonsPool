@@ -1,0 +1,8 @@
+#! usr/bin/env php
+<?php
+
+namespace AntiPatterns\Multiton;
+
+require_once 'vendor/autoload.php';
+
+print_r(SingletonsPool::getInstances('First'));
