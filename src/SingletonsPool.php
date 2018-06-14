@@ -1,15 +1,13 @@
 <?php
+
+declare(strict_types=1);
+
 /**
- * Date: 28.03.18
- * Time: 15:02
- *
  * @author    : Korotkov Danila <dankorot@gmail.com>
- * @copyright Copyright (c) 2018, Korotkov Danila
- * @license   http://www.gnu.org/licenses/gpl.html GNU GPLv3.0
+ * @license   https://mit-license.org/ MIT
  */
 
 namespace AntiPatterns\SingletonsPool;
-
 
 /**
  * Class SingletonsPool
@@ -24,16 +22,16 @@ final class SingletonsPool
     protected static $instances = [];
 
     /**
-     * @param string $instance
+     * @param string $instanceName
      * @return mixed
      */
-    public static function getInstances(string $instance): self
+    public static function getInstance(string $instanceName): self
     {
-        if (!array_key_exists($instance, self::$instances)){
-            self::$instances[$instance] = new self;
+        if (!array_key_exists($instanceName, static::$instances)){
+            static::$instances[$instanceName] = new static;
         }
 
-        return self::$instances[$instance];
+        return static::$instances[$instanceName];
     }
 
     public function __construct()
