@@ -7,3 +7,5 @@
 
 # SingletonsPool | [API](https://github.com/Jagepard/PhpDesignPatterns-SingletonsPool/blob/master/docs.md "Documentation API")
 Пул Одиночек
+
+![SingletonsPool](https://github.com/Jagepard/PhpDesignPatterns-SingletonsPool/blob/master/UML.png)
