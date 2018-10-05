@@ -5,5 +5,5 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-498e7f.svg)](https://mit-license.org/)
 -----
 
-# SingletonsPool
+# SingletonsPool [API](https://github.com/Jagepard/PhpDesignPatterns-SingletonsPool/blob/master/docs.md "Documentation API")
 Пул Одиночек
