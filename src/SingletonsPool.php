@@ -15,25 +15,27 @@ namespace AntiPatterns\SingletonsPool;
  */
 final class SingletonsPool
 {
-
     /**
      * @var array
      */
-    protected static $instances = [];
+    private static $instances = [];
 
     /**
-     * @param string $instanceName
-     * @return mixed
+     * @param string $name
+     * @return SingletonsPool
      */
-    public static function getInstance(string $instanceName): self
+    public static function getInstance(string $name): self
     {
-        if (!array_key_exists($instanceName, static::$instances)){
-            static::$instances[$instanceName] = new static;
+        if (!array_key_exists($name, static::$instances)){
+            static::$instances[$name] = new static;
         }
 
-        return static::$instances[$instanceName];
+        return static::$instances[$name];
     }
 
+    /**
+     * SingletonsPool constructor.
+     */
     public function __construct()
     {
     }
