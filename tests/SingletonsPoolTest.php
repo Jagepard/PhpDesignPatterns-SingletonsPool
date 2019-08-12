@@ -12,9 +12,6 @@ namespace AntiPatterns\SingletonsPool\Tests;
 use AntiPatterns\SingletonsPool\SingletonsPool;
 use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
-/**
- * Class SingletonsPoolTest
- */
 class SingletonsPoolTest extends PHPUnit_Framework_TestCase
 {
     public function testInstances()
