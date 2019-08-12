@@ -9,10 +9,6 @@ declare(strict_types=1);
 
 namespace AntiPatterns\SingletonsPool;
 
-/**
- * Class SingletonsPool
- * @package AntiPatterns\SingletonsPool
- */
 final class SingletonsPool
 {
     /**
