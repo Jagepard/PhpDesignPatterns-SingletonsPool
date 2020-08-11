@@ -3,6 +3,8 @@
 
 namespace AntiPatterns\SingletonsPool;
 
-require_once 'vendor/autoload.php';
+require_once "vendor/autoload.php";
 
-print (SingletonsPool::getInstance('First') === SingletonsPool::getInstance('Second')) ?: "SingletonsPool \n";
+if (SingletonsPool::getInstance("First") !== SingletonsPool::getInstance("Second")) {
+    echo "SingletonsPool \n";
+}
