@@ -7,3 +7,8 @@
 
 # SingletonsPool | [API](https://github.com/Jagepard/PhpDesignPatterns-SingletonsPool/blob/master/docs.md "Documentation API")
 ```php run``` execute in terminal
+
+##Result:
+```
+SingletonsPool
+```
