@@ -13,6 +13,14 @@ final class SingletonsPool
 {
     private static array $instances = [];
 
+    /**
+     * Gets an object instance
+     * --------------------------
+     * Получает экземпляр объекта
+     *
+     * @param  string $name
+     * @return self
+     */
     public static function getInstance(string $name): self
     {
         if (!array_key_exists($name, static::$instances)) {
